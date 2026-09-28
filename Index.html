@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rahat | Official Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #080808;
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(8,8,8,0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #ff1744;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ff1744;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 50px;
+      background:
+        radial-gradient(circle at center, #3b0715 0%, #080808 50%);
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 10vw, 100px);
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+
+    .hero h1 span {
+      color: #ff1744;
+    }
+
+    .hero p {
+      margin: 20px auto;
+      max-width: 550px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #ff1744;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px #ff1744;
+    }
+
+    /* ABOUT */
+    section {
+      padding: 90px 7%;
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .title h2 {
+      font-size: 40px;
+    }
+
+    .title span {
+      color: #ff1744;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #aaa;
+      line-height: 1.8;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      padding: 35px 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #ff1744;
+      box-shadow: 0 0 25px rgba(255,23,68,0.15);
+    }
+
+    .card .icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #999;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: #0d0d0d;
+    }
+
+    .contact p {
+      color: #999;
+      margin: 15px 0;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #050505;
+      color: #666;
+      font-size: 13px;
+    }
+
+    @media(max-width: 650px) {
+      nav ul {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 11px;
+      }
+
+      .hero h1 {
+        letter-spacing: 2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">RAHAT<span>.</span></div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div>
+      <h1>RAHAT<span>.</span></h1>
+
+      <p>
+        Welcome to my official website.
+        Creative design, gaming and digital projects.
+      </p>
+
+      <a href="#about" class="btn">EXPLORE</a>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="title">
+      <h2>ABOUT <span>ME</span></h2>
+    </div>
+
+    <div class="about">
+      <p>
+        I'm Rahat, a creative person interested in gaming,
+        graphic design and digital projects. This website
+        is a place to showcase my work and projects.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="title">
+      <h2>MY <span>WORK</span></h2>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <div class="icon">🎮</div>
+        <h3>Gaming</h3>
+        <p>
+          Gaming projects, concepts and experiments.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Design</h3>
+        <p>
+          Logo, branding and creative graphic design.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Web</h3>
+        <p>
+          Modern websites and interactive projects.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="title">
+      <h2>CONTACT <span>ME</span></h2>
+    </div>
+
+    <p>Want to work together?</p>
+
+    <a href="mailto:your@email.com" class="btn">
+      CONTACT ME
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Rahat. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
